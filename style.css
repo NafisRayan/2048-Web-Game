@@ -1,0 +1,95 @@
+:root {
+  --primary-text-color: #f4f4f4;
+  --secondary-text-color: #c2c2c2;
+  --background-color: #1d1d1d;
+  --grid-background: #272727;
+  --box-shadow-color: #000000;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+  font-family: "Press Start 2P", cursive;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
+  min-height: 100vh;
+}
+
+.container {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.score {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  font-size: 2rem;
+  text-align: center;
+  padding: 10px;
+  color: var(--secondary-text-color);
+}
+
+.score-title {
+  width: 50%;
+}
+
+.score-value {
+  width: 50%;
+}
+
+.result {
+  font-size: 2rem;
+  text-align: center;
+  padding: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  width: 400px;
+  height: 400px;
+  background: var(--grid-background);
+  box-shadow: 5px 5px 20px var(--box-shadow-color);
+  border: 2px solid var(--primary-text-color);
+}
+
+.grid-item {
+  border: 2px solid var(--primary-text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.rules {
+  border: 2px solid var(--primary-text-color);
+  padding: 20px;
+  background: var(--grid-background);
+}
+
+.rules > h1 {
+  width: 100%;
+  font-size: 2rem;
+  text-align: center;
+  padding: 10px;
+}
+
+.rules-para {
+  padding: 20px 10px;
+  color: var(--secondary-text-color);
+}
