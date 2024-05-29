@@ -8,6 +8,8 @@ This repository contains the source code for a game project developed using HTML
 - **Result Display**: Shows the outcome of the game after completion.
 - **Interactive Grid**: Contains numbered items that players can interact with to progress through the game.
 
+![alt text](https://github.com/NafisRayan/ThreeJS-Hand-Buttons/blob/main/ss.png)
+
 ## Getting Started
 
 ### Prerequisites
